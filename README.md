@@ -14,7 +14,7 @@
 **Cyberpunk neon Flutter Web portfolio — Pro Max Edition**  
 *Senior Android Developer · Kotlin · Jetpack Compose · Firebase · CI/CD*
 
-[🌐 Live Demo](https://moekyawaung-portfolio-v5.web.app) · [📱 GitHub](https://github.com/Dev-moe-kyawaung) · [💼 LinkedIn](https://www.linkedin.com/in/moe-kyaw-aung-2653093a1)
+[🌐 Live Demo](https://Moekyawaung-flutter-portfolio-v5.web.app) · [📱 GitHub](https://github.com/Dev-moe-kyawaung) · [💼 LinkedIn](https://www.linkedin.com/in/moe-kyaw-aung-2653093a1)
 
 </div>
 
