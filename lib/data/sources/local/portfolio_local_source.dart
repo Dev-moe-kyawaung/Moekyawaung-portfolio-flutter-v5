@@ -282,5 +282,5 @@ class PortfolioLocalSource {
 }
 
   // Extension methods for state providers
-  static List<String> getGithubAccounts() => AppLinks.githubAccounts;
-  static List<String> getLovableApps() => AppLinks.lovableApps;
+   List<String> getGithubAccounts() => AppLinks.githubAccounts;
+    List<String> getLovableApps() => AppLinks.lovableApps;
