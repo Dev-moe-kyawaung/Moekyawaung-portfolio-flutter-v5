@@ -1,0 +1,47 @@
+name: 🚀 Deploy to Firebase
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Build & Deploy to Firebase Hosting
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🐦 Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.22.0'
+          channel: 'stable'
+          cache: true
+
+      - name: 📦 Get dependencies
+        run: flutter pub get
+
+      - name: 🔍 Analyze (pre-deploy gate)
+        run: flutter analyze --no-fatal-infos
+
+      - name: 🏗️ Build Web
+        run: |
+          flutter build web \
+            --release \
+            --web-renderer canvaskit \
+            --pwa-strategy offline-first \
+            --dart-define=ENV=production
+
+      - name: 🔑 Setup Firebase CLI
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+
+      - name: ✅ Notify Deployment
+        run: echo "🎉 Deployed to Firebase Hosting — https://moekyawaung-portfolio-v5.web.app"
