@@ -262,24 +262,25 @@ class PortfolioLocalSource {
   ];
 
   static List<AppModel> getApps() => const [
-    AppModel(emoji: '📊', title: 'Social Dashboard', url: 'https://moekyawaung-github.lovable.app', githubUrl: 'https://github.com/moekyawaung-tech/social-dashboard', description: 'Real-time social media analytics with charts'),
-    AppModel(emoji: '📱', title: 'PWA App', url: 'https://moekyawaungmka.lovable.app', githubUrl: 'https://github.com/moekyawaung-tech/pwa-app', description: 'Progressive Web App with offline support'),
+    AppModel(emoji: '📊', title: 'Social Dashboard', url: 'https://moekyawaung-github.lovable.app', githubUrl: 'https://github.com/moekyawaung-tech/social-dashboard', description: 'Real-time social analytics with multi-platform data', type: 'lovable'),
+    AppModel(emoji: '📱', title: 'PWA App', url: 'https://moekyawaungmka.lovable.app', githubUrl: 'https://github.com/moekyawaung-tech/pwa-app', description: 'Progressive Web App with offline support', type: 'lovable'),
     AppModel(emoji: '📈', title: 'Admin Dashboard', url: 'https://moekyawaung-dev.lovable.app', description: 'Feature-rich admin panel with charts & analytics', type: 'lovable'),
     AppModel(emoji: '📉', title: 'Stock Market', url: 'https://moekyaw.lovable.app', description: 'Stock market tracker with real-time data & charts', type: 'lovable'),
-    AppModel(emoji: '🎮', title: 'Game Collection', url: 'https://color-code-chronicles.lovable.app', githubUrl: 'https://github.com/moekyawaung-tech/game-collection', description: 'Browser games collection'),
+    AppModel(emoji: '🎮', title: 'Game Collection', url: 'https://color-code-chronicles.lovable.app', githubUrl: 'https://github.com/moekyawaung-tech/game-collection', description: 'Browser games: Snake, Tetris & more', type: 'lovable'),
     AppModel(emoji: '🎵', title: 'Music Player', url: 'https://moekyawaung.lovable.app', description: 'Sleek music player with playlist & visualizer', type: 'lovable'),
     AppModel(emoji: '💬', title: 'Chat App', url: 'https://dev-moekyawaung.lovable.app', description: 'Real-time chat with Firebase backend', type: 'lovable'),
     AppModel(emoji: '⚽', title: 'World Cup', url: 'https://moekyawaungmybio.lovable.app/', description: 'World Cup fixtures, results & stats tracker', type: 'lovable'),
     AppModel(emoji: '🛒', title: 'E-Commerce', url: 'https://happy-cv-creator.lovable.app', description: 'Full e-commerce with cart, payments & orders', type: 'lovable'),
     AppModel(emoji: '💼', title: 'Portfolio', url: 'https://moekyaw-url.lovable.app', description: 'Responsive developer portfolio (this site!)', type: 'lovable'),
     AppModel(emoji: '💰', title: 'Money Tracker', url: 'https://the-cv-palette.lovable.app', description: 'Personal finance tracker with budget analytics', type: 'lovable'),
-    AppModel(emoji: '🌤️', title: 'Weather', url: 'https://moekyawaungmkamka.lovable.app', githubUrl: 'https://github.com/moekyawaung-tech/Weather-app', description: '7-day forecast with location detection'),
+    AppModel(emoji: '🌤️', title: 'Weather', url: 'https://moekyawaungmkamka.lovable.app', githubUrl: 'https://github.com/moekyawaung-tech/Weather-app', description: '7-day forecast with location detection', type: 'lovable'),
     AppModel(emoji: '💸', title: 'Crypto', url: 'https://mmoekyaw.lovable.app', description: 'Cryptocurrency prices, portfolio & news', type: 'lovable'),
-    AppModel(emoji: '📝', title: 'Todo', url: 'https://devmoekyaw.lovable.app', githubUrl: 'https://github.com/moekyawaung-tech/javascript-todo', description: 'Smart todo app with priorities & deadlines'),
-    AppModel(emoji: '🎯', title: 'Video Player', url: 'https://pixel-perfect-snap-39.lovable.app', githubUrl: 'https://github.com/moekyawaung-tech/video-player', description: 'Feature-rich video player'),
+    AppModel(emoji: '📝', title: 'Todo', url: 'https://devmoekyaw.lovable.app', githubUrl: 'https://github.com/moekyawaung-tech/javascript-todo', description: 'Smart todo app with priorities & reminders', type: 'lovable'),
+    AppModel(emoji: '🎯', title: 'Video Player', url: 'https://pixel-perfect-snap-39.lovable.app', githubUrl: 'https://github.com/moekyawaung-tech/video-player', description: 'Feature-rich video player with playlist support', type: 'lovable'),
     AppModel(emoji: '👑', title: 'LEGEND!', url: 'https://joy-codify-life.lovable.app/', description: 'The ultimate showcase — legend status unlocked!', type: 'lovable'),
   ];
+}
 
+  // Extension methods for state providers
   static List<String> getGithubAccounts() => AppLinks.githubAccounts;
   static List<String> getLovableApps() => AppLinks.lovableApps;
-}
