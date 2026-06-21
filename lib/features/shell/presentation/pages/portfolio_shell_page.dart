@@ -140,7 +140,7 @@ class _PortfolioShellPageState extends ConsumerState<PortfolioShellPage> {
   }
 }
 
-// â”€â”€â”€ Cyberpunk Grid Background â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ---------- Cyberpunk Grid Background ----------
 class _CyberpunkGridBg extends StatelessWidget {
   const _CyberpunkGridBg();
 
@@ -174,7 +174,7 @@ class _GridPainter extends CustomPainter {
   bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }
 
-// â”€â”€â”€ Footer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ---------- Footer ----------
 class _Footer extends StatelessWidget {
   final void Function(String) onScrollTo;
   const _Footer({required this.onScrollTo});
@@ -197,12 +197,12 @@ class _Footer extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            'Â© 2026 Moe Kyaw Aung. Built with Flutter Web.',
+            '© 2026 Moe Kyaw Aung. Built with Flutter Web.',
             style: TextStyle(color: AppColors.silverMuted, fontSize: 13),
           ),
           const SizedBox(height: 4),
           Text(
-            'Code with culture. Build with purpose. ðŸ‡²ðŸ‡²',
+            'Code with culture. Build with purpose. 🇲🇲',
             style: TextStyle(color: AppColors.neonCyan.withOpacity(0.7), fontSize: 12),
           ),
         ],
